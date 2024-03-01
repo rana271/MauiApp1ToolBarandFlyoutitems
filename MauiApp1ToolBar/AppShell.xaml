@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiApp1ToolBar.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiApp1ToolBar"
+    Shell.FlyoutBehavior="Flyout">
+
+    <FlyoutItem Title="Home" Icon="icon_about.png">
+        <ShellContent Route="HomePage" ContentTemplate="{DataTemplate local:HomePage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="Browse" Icon="icon_feed.png">
+        <ShellContent Route="ItemsPage" ContentTemplate="{DataTemplate local:ItemPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="Logout" Icon="icon_feed.png">
+        <ShellContent Route="Logout" ContentTemplate="{DataTemplate local:Logout}" />
+    </FlyoutItem>
+    <FlyoutItem Title="About" Icon="icon_about.png">
+        <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:About}" />
+    </FlyoutItem>
+    <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->
+   
+    <!--<TabBar>
+        <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage"
+        />
+        </TabBar>-->
+</Shell>
